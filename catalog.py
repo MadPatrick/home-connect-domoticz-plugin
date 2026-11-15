@@ -419,6 +419,61 @@ _NAMES = {
         "Koffietemperatuur",
     ),
     "ConsumerProducts.CoffeeMaker.Option.FillQuantity": ("Fill quantity", "Vulhoeveelheid"),
+    "ConsumerProducts.CoffeeMaker.Option.AromaSelect": ("Aroma", "Aroma"),
+    "ConsumerProducts.CoffeeMaker.Option.BeanContainerSelection": (
+        "Bean container",
+        "Bonenreservoir",
+    ),
+    "ConsumerProducts.CoffeeMaker.Option.BeverageSize": ("Beverage size", "Drankgrootte"),
+    "ConsumerProducts.CoffeeMaker.Option.BeveragesRemaining": (
+        "Beverages remaining",
+        "Resterende dranken",
+    ),
+    "ConsumerProducts.CoffeeMaker.Option.Coarsness": ("Grind setting", "Maalgraad"),
+    "ConsumerProducts.CoffeeMaker.Option.CoffeeMilkRatio": (
+        "Coffee/milk ratio",
+        "Verhouding koffie/melk",
+    ),
+    "ConsumerProducts.CoffeeMaker.Option.CoffeeStrength": ("Coffee strength", "Koffiesterkte"),
+    "ConsumerProducts.CoffeeMaker.Option.FlowRate": ("Flow rate", "Doorloopsnelheid"),
+    "ConsumerProducts.CoffeeMaker.Option.HotWaterTemperature": (
+        "Hot water temperature",
+        "Heetwatertemperatuur",
+    ),
+    "ConsumerProducts.CoffeeMaker.Option.MultipleBeverages": ("Two cups", "Twee kopjes"),
+    "ConsumerProducts.CoffeeMaker.Option.Shot.Count": ("Shots", "Aantal shots"),
+    "ConsumerProducts.CoffeeMaker.Setting.CupWarmer": ("Cup warmer", "Kopjeswarmer"),
+    # Beverage counters: how many of each drink the machine has made since it was new.
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterCoffee": ("Coffees made", "Aantal koffie"),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterCoffeeAndMilk": (
+        "Coffees with milk made",
+        "Aantal koffie met melk",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterFrothyMilk": (
+        "Milk froths made",
+        "Aantal melkschuim",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterHotMilk": (
+        "Hot milks made",
+        "Aantal warme melk",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterHotWater": (
+        "Hot water made",
+        "Hoeveelheid heet water",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterHotWaterCups": (
+        "Hot water cups made",
+        "Aantal kopjes heet water",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterMilk": ("Milks made", "Aantal melk"),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterPowderCoffee": (
+        "Powder coffees made",
+        "Aantal koffie van poeder",
+    ),
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterRistrettoEspresso": (
+        "Ristrettos/espressos made",
+        "Aantal ristretto/espresso",
+    ),
     "Cooking.Oven.Option.FastPreHeat": ("Fast preheat", "Snel voorverwarmen"),
     "Cooking.Oven.Option.SetpointTemperature": ("Set temperature", "Ingestelde temperatuur"),
     "Cooking.Common.Setting.Lighting": ("Light", "Verlichting"),
@@ -491,6 +546,11 @@ _NAMES = {
     "ConsumerProducts.CoffeeMaker.Event.DeviceShouldBeCleaned": (
         "Cleaning needed",
         "Reiniging nodig",
+    ),
+    # Older machines send this instead of DeviceShouldBeDescaled.
+    "ConsumerProducts.CoffeeMaker.Event.DescalingNecessary": (
+        "Descaling necessary",
+        "Ontkalken noodzakelijk",
     ),
     "ConsumerProducts.CoffeeMaker.Event.DeviceShouldBeDescaled": (
         "Descaling needed",

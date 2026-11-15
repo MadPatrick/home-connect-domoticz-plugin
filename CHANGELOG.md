@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- Coffee machines: the beverage counters (coffee, coffee with milk, milk, milk froth, hot milk,
+  hot water, powder coffee, ristretto/espresso) get a name in English and Dutch and start used,
+  so they show on the dashboard. The cup warmer, the remaining coffee options and the older
+  DescalingNecessary message are named too.
+
+### Fixed
+
+- A message that arrives as a STATUS or NOTIFY item instead of an EVENT is now a message: it
+  shows on the Notifications card and its own message device, instead of on a plain status
+  device.
+
 ## [0.1.0-beta.9] - 2026-11-08
 
 ### Added
