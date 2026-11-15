@@ -385,6 +385,27 @@ _METERS = {
     "LaundryCare.Washer.Status.Softener.All.Consumed": MeterInfo(
         "counter_total", ("Softener", "Wasverzachter"), "ml", "ml", 1
     ),
+    # Coffee machine beverage counters: drinks made since the machine was new. Home Connect sends
+    # a plain count (no unit); `reported` "" accepts whatever unit label it adds, since a count
+    # is never scaled. Hot water is a volume in ml, shown in litres like the water meter.
+    "ConsumerProducts.CoffeeMaker.Status.BeverageCounterHotWater": MeterInfo(
+        "counter_total", ("Hot water", "Heet water"), "L", "ml", 1000
+    ),
+    **{
+        f"ConsumerProducts.CoffeeMaker.Status.BeverageCounter{name}": MeterInfo(
+            "counter_total", quantity, "cups", "", 1
+        )
+        for name, quantity in (
+            ("Coffee", ("Coffee", "Koffie")),
+            ("CoffeeAndMilk", ("Coffee with milk", "Koffie met melk")),
+            ("FrothyMilk", ("Milk froth", "Melkschuim")),
+            ("HotMilk", ("Hot milk", "Warme melk")),
+            ("HotWaterCups", ("Hot water", "Heet water")),
+            ("Milk", ("Milk", "Melk")),
+            ("PowderCoffee", ("Powder coffee", "Poederkoffie")),
+            ("RistrettoEspresso", ("Ristretto/espresso", "Ristretto/espresso")),
+        )
+    },
 }
 
 # EN/NL names for documented keys. They win over the names Home Connect sends, which are often
@@ -725,7 +746,7 @@ _NUMBERED_VALUES = {
     "BSH.Common.EnumType.AmbientLightColor.Color": ("Colour {n}", "Kleur {n}"),
 }
 # Units of measure as shown on a device; the unit sent to Home Connect is never translated.
-_UNITS = {"calls": ("calls", "aanroepen")}
+_UNITS = {"calls": ("calls", "aanroepen"), "cups": ("cups", "kopjes")}
 
 
 def pick(pair: tuple[str, str], lang: str) -> str:

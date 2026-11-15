@@ -4,7 +4,7 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## Unreleased
 
 ### Added
 
@@ -12,6 +12,9 @@ All notable changes to this project are documented here. The format follows
   hot water, powder coffee, ristretto/espresso) get a name in English and Dutch and start used,
   so they show on the dashboard. The cup warmer, the remaining coffee options and the older
   DescalingNecessary message are named too.
+- Coffee machines: each beverage counter is a Domoticz Counter (cups; hot water in litres), so
+  its log shows the drinks made per day, month and year. A counter created by an earlier version
+  as a plain number keeps that type until you delete it.
 
 ### Fixed
 
