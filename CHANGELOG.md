@@ -18,6 +18,10 @@ All notable changes to this project are documented here. The format follows
 
 ### Fixed
 
+- A per-key device you delete is created again with the type the plugin chooses now, instead of
+  the type it had. Until now the plugin remembered the old type, so deleting an old beverage
+  counter brought it back as a plain number.
+
 - A message that arrives as a STATUS or NOTIFY item instead of an EVENT is now a message: it
   shows on the Notifications card and its own message device, instead of on a plain status
   device.

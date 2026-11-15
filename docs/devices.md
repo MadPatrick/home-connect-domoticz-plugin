@@ -293,7 +293,8 @@ Good to know:
 - A counter appears the first time the machine reports it, and only for the drinks your
   machine makes.
 - A counter that an older version created as a plain number keeps that type. Delete it under
-  Setup > Devices and it comes back as a Counter at the next report (its history starts again).
+  Setup > Devices and it comes back as a Counter the next time the machine reports it (its
+  history starts again).
 
 ## When the appliance or the connection is away
 
